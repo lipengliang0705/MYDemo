@@ -1,14 +1,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-title text-center>
-      任务
+      赏金任务
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-card class="home-card">
-      <ion-button expand="full"  routerLink="/bountyTask" class="comfirm-btn"></ion-button>
-      <ion-img src="/assets/images/task-tab.png"></ion-img>
+      <ion-button expand="full" (click)="alert()" class="comfirm-btn"></ion-button>
+      <ion-img src="/assets/images/bounty-task.png"></ion-img>
     </ion-card>
 </ion-content>
+
