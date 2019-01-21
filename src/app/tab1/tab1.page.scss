@@ -20,6 +20,7 @@ ion-content{
   ion-card{
     -webkit-box-shadow:none;
     box-shadow:none;
+    padding-bottom: 50px;
     .comfirm-btn{
        --background: none;
        --background-focused:none;
@@ -27,10 +28,10 @@ ion-content{
        --box-shadow:none;
        position: absolute;
        width: 90%;
-       height: 12%;
+       height: 14%;
        left: 5%;
        right: 5%;
-       bottom: 5%;
+       bottom: 2%;
        z-index: 100;
     }
     border-radius: 0;

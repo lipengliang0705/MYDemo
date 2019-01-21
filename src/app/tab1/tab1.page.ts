@@ -10,6 +10,7 @@ export class Tab1Page {
 
 public isShow:boolean=false;
 alert(){
+  console.log(1111);
   this.isShow=!this.isShow;
 }
   // constructor(
