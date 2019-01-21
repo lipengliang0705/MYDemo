@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AlertController} from '@ionic/angular';
-import {from} from 'rxjs';
+import { NavController} from '@ionic/angular';
 
 @Component({
     selector: 'app-bounty-task',
@@ -9,24 +8,18 @@ import {from} from 'rxjs';
 })
 export class BountyTaskPage {
 
-    // constructor(
-    //   public alertController:AlertController
-
-    // ) { }
-    // async alert() {
-    //   const alert = await this.alertController.create({
-    //     header: 'Alert',
-    //     subHeader: 'Subtitle',
-    //     message: 'This is an alert message.',
-    //     cssClass:'custom-css',
-    //     buttons: ['OK','cancel']
-    //   });
-
-    //   await alert.present();
-    // }
+    constructor(
+        public navCtrl: NavController,
+    ) {
+    }
     public isShow: boolean = false;
 
     alert() {
         this.isShow = !this.isShow;
     }
+
+    navBack() {
+        this.navCtrl.goBack();
+    }
+
 }
