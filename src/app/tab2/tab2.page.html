@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab Two
+    <ion-title text-center>
+      任务
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-card class="home-card">
+      <ion-button expand="full"  routerLink="/bounty-task" class="comfirm-btn"></ion-button>
+      <ion-button expand="full" (click)="alert()" class="keep-btn"></ion-button>
+      <ion-img src="/assets/images/task-tab.png"></ion-img>
+    </ion-card>
+</ion-content>
+<div class="mask" id="pop" *ngIf="isShow">
+    <div class="pop">
+        <div class="pop-cont">
+            <a class="closebtn" (click)="alert()"></a>
+            <img src="../assets/images/continue-task.png"/>
+        </div>
+    </div> 
+</div>

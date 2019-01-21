@@ -1,1 +1,76 @@
-
+.home-card ion-img {
+    position: relative;
+    max-height: 100vh;
+    img{
+      height: auto;
+    }
+  }
+  ion-header{
+    --ion-background-color: #303134;
+    ion-toolbar{
+      background-color: #303134;
+      ion-title{
+        background: #303134;
+        color: cornsilk;
+      }
+    }
+  }
+  ion-content{
+    --ion-background-color:#F4F5F6;
+    ion-card{
+      -webkit-box-shadow:none;
+      box-shadow:none;
+      .keep-btn{
+         --background: none;
+         --background-focused:none;
+         --background-activated:none;
+         --box-shadow:none;
+         position: absolute;
+         width: 90%;
+         height: 12%;
+         left: 5%;
+         right: 5%;
+         bottom: 5%;
+         z-index: 100;
+      }
+      border-radius: 0;
+      margin:0;
+    }
+  }
+  .mask{ 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom:0; 
+    background: rgba(0,0,0,0.3); 
+    z-index: 999999;  
+    .pop{ 
+      width:90%; 
+      position: fixed; 
+      left: 50%; 
+      top: 50%; 
+      height: auto;
+      -webkit-transform:translate(-50%,-50%);
+      -moz-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+      -o-transform:translate(-50%,-50%);
+      .pop-cont{ 
+        width: 100%; 
+        overflow: hidden; 
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .closebtn{
+          position: absolute;
+          bottom: 2px;
+          left: 10%;
+          right: 10%;
+          width: 80%;
+          height: 15%;
+        }
+      }
+    }
+  }
+  
