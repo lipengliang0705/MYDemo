@@ -7,21 +7,27 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  constructor(
-    public alertController: AlertController
-  ){}
+
+public isShow:boolean=false;
+alert(){
+  this.isShow=!this.isShow;
+}
+  // constructor(
+  //   public alertController: AlertController
+  // ){}
 
 
 
-  async alert() {
-    const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
-      cssClass:'custom-css',
-      buttons: ['OK','cancel']
-    });
+  // async alert() {
+  //   const alert = await this.alertController.create({
+  //     header: 'Alert',
+  //     subHeader: 'Subtitle',
+  //     message: 'This is an alert message.',
+  //     cssClass:'custom-css',
+  //     buttons: ['OK','cancel']
+  //   });
 
-    await alert.present();
-  }
+  //   await alert.present();
+  // }
+
 }

@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title text-center>
+      <ion-buttons slot="start">
+        <ion-icon name="ios-arrow-back" style="font-size: 24px;" color="primary" routerLink="/tabs"></ion-icon>
+      </ion-buttons>
+    <ion-title>
       赏金任务
     </ion-title>
   </ion-toolbar>
@@ -8,8 +11,16 @@
 
 <ion-content>
     <ion-card class="home-card">
-      <ion-button expand="full" (click)="alert()" class="comfirm-btn"></ion-button>
+      <ion-button expand="full" (click)="alert()" class="keep-btn"></ion-button>
       <ion-img src="/assets/images/bounty-task.png"></ion-img>
     </ion-card>
 </ion-content>
+<div class="mask" id="pop" *ngIf="isShow">
+    <div class="pop">
+        <div class="pop-cont">
+            <a class="closebtn" (click)="alert()"></a>
+            <img src="../assets/images/confirm-task.png"/>
+        </div>
+    </div> 
+</div>
 

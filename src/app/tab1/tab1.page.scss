@@ -37,3 +37,39 @@ ion-content{
     margin:0;
   }
 }
+.mask{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  right: 0; 
+  bottom:0; 
+  background: rgba(0,0,0,0.3); 
+  z-index: 999999;  
+  .pop{ 
+    width:90%; 
+    position: fixed; 
+    left: 50%; 
+    top: 50%; 
+    height: auto;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    .pop-cont{ 
+      width: 100%; 
+      overflow: hidden; 
+      position: relative;
+      img{
+        width: 100%;
+      }
+      .closebtn{
+        position: absolute;
+        bottom: 2px;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        height: 15%;
+      }
+    }
+  }
+}

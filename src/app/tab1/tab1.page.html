@@ -40,3 +40,11 @@
       </ion-item>
     </ion-list> -->
 </ion-content>
+<div class="mask" id="pop" *ngIf="isShow">
+    <div class="pop">
+        <div class="pop-cont">
+            <a class="closebtn" (click)="alert()"></a>
+            <img src="../assets/images/confirm-transaction.png"/>
+        </div>
+    </div> 
+</div>
