@@ -21,6 +21,7 @@ ion-content{
     -webkit-box-shadow:none;
     box-shadow:none;
     padding-bottom: 50px;
+    position: relative;
     .comfirm-btn{
        --background: none;
        --background-focused:none;
@@ -28,10 +29,10 @@ ion-content{
        --box-shadow:none;
        position: absolute;
        width: 90%;
-       height: 14%;
+       height: 12%;
        left: 5%;
        right: 5%;
-       bottom: 2%;
+       bottom: 7%;
        z-index: 100;
     }
     border-radius: 0;

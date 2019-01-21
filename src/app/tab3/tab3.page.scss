@@ -17,6 +17,10 @@
   }
   ion-content{
     --ion-background-color:#F4F5F6;
+    .blackline{
+      height: 10px;
+      background: #303134;
+    }
     ion-card{
       -webkit-box-shadow:none;
       box-shadow:none;

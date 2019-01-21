@@ -20,6 +20,7 @@
     ion-card{
       box-shadow:none;
       -webkit-box-shadow:none;
+      position: relative;
       padding-bottom: 50px;
       .comfirm-btn{
          --background: none;
@@ -31,7 +32,7 @@
          height: 12%;
          left: 5%;
          right: 5%;
-         top: 30%;
+         top: 28%;
          z-index: 100;
       }
       .keep-btn{
@@ -43,7 +44,7 @@
         width: 20%;
         height: 20%;
         right: 5%;
-        top: 45%;
+        top: 43%;
         z-index: 100;
      }
       border-radius: 0;
