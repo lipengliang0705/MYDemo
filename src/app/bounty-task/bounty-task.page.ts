@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { from } from 'rxjs';
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-bounty-task',
+  templateUrl: './bounty-task.page.html',
+  styleUrls: ['./bounty-task.page.scss'],
 })
-export class Tab2Page {
+export class BountyTaskPage {
+
   // constructor(
-  //   public alertController: AlertController
-  // ){}
+  //   public alertController:AlertController
 
-
-
+  // ) { }
   // async alert() {
   //   const alert = await this.alertController.create({
   //     header: 'Alert',
